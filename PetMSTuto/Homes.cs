@@ -16,6 +16,7 @@ namespace PetMSTuto
         public Homes()
         {
             InitializeComponent();
+            label7.Text = Login.Employee;
             CountDogs();
             CountBirds();
             CountCats();

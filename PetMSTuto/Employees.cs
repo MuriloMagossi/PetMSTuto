@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Reflection.Emit;
+
 namespace PetMSTuto
 {
     public partial class Employees : Form
@@ -15,6 +17,7 @@ namespace PetMSTuto
         public Employees()
         {
             InitializeComponent();
+            EmpNameLbl.Text = Login.Employee;
             DisplayEmployees();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Murilo\Documents\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");

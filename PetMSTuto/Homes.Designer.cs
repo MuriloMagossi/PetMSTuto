@@ -118,13 +118,16 @@
             // 
             this.guna2CircleProgressBar1.Controls.Add(this.label15);
             this.guna2CircleProgressBar1.Controls.Add(this.FinanceLbl);
+            this.guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleProgressBar1.Location = new System.Drawing.Point(567, 381);
+            this.guna2CircleProgressBar1.Minimum = 0;
             this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
             this.guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.Gold;
             this.guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.Gold;
             this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleProgressBar1.ShadowDecoration.Parent = this.guna2CircleProgressBar1;
-            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(179, 170);
+            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(170, 170);
             this.guna2CircleProgressBar1.TabIndex = 21;
             this.guna2CircleProgressBar1.Value = 100;
             // 
@@ -306,7 +309,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(10)))), ((int)(((byte)(66)))));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(48, 79);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(389, 20);
@@ -317,7 +320,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(10)))), ((int)(((byte)(66)))));
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(47, 53);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(570, 20);
@@ -367,9 +370,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(56, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 20);
+            this.label2.Size = new System.Drawing.Size(52, 20);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Home";
+            this.label2.Text = "Início";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
@@ -394,9 +397,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(68, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Products";
+            this.label1.Text = "Produtos";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
@@ -416,9 +419,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(68, 282);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 20);
+            this.label3.Size = new System.Drawing.Size(110, 20);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Employees";
+            this.label3.Text = "Empregados";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox3
@@ -438,9 +441,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(68, 345);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 20);
+            this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Customers";
+            this.label4.Text = "Clientes";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox4
@@ -460,9 +463,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(68, 413);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 20);
+            this.label5.Size = new System.Drawing.Size(62, 20);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Billing";
+            this.label5.Text = "Fatura";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox5
@@ -482,9 +485,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(68, 476);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.Size = new System.Drawing.Size(41, 20);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Logout";
+            this.label6.Text = "Sair";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox6
@@ -514,9 +517,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(57, 96);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 20);
+            this.label7.Size = new System.Drawing.Size(71, 20);
             this.label7.TabIndex = 18;
-            this.label7.Text = "EmpName";
+            this.label7.Text = "Usuário";
             // 
             // bunifuElipse4
             // 

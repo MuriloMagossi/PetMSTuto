@@ -16,6 +16,7 @@ namespace PetMSTuto
         public Customers()
         {
             InitializeComponent();
+            label7.Text = Login.Employee;
             DisplayCustomers();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Murilo\Documents\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
