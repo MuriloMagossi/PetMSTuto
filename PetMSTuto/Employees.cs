@@ -62,7 +62,7 @@ namespace PetMSTuto
                     cmd.Parameters.AddWithValue("@EP", EmpPhoneTb.Text);
                     cmd.Parameters.AddWithValue("@EPa", PasswordTb.Text);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee Added!!!");
+                    MessageBox.Show("Funcionário adicionado");
                     Con.Close();
                     DisplayEmployees();
                     Clear();
@@ -93,7 +93,7 @@ namespace PetMSTuto
         {
             if (EmpNameTb.Text == "" || EmpPhoneTb.Text == "" || PasswordTb.Text == "" || EmpAddTb.Text == "")
             {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Faltando Informação");
             }
             else
             {
@@ -108,7 +108,7 @@ namespace PetMSTuto
                     cmd.Parameters.AddWithValue("@EPa", PasswordTb.Text);
                     cmd.Parameters.AddWithValue("@EKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee Updated!!!");
+                    MessageBox.Show("Funcionário adicionado");
                     Con.Close();
                     DisplayEmployees();
                     Clear();

@@ -42,7 +42,7 @@ namespace PetMSTuto
         {
             if (CustNameTb.Text == "" || CustAddTb.Text == "" || CustPhoneTb.Text == "")
             {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Faltando Informação");
             }
             else
             {
@@ -55,7 +55,7 @@ namespace PetMSTuto
                     cmd.Parameters.AddWithValue("@CP", CustPhoneTb.Text);
                     
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer Added!!!");
+                    MessageBox.Show("Cliente Adicionado");
                     Con.Close();
                     DisplayCustomers();
                     Clear();
@@ -86,7 +86,7 @@ namespace PetMSTuto
         {
             if (Key == 0)
             {
-                MessageBox.Show("Select An Customer");
+                MessageBox.Show("Selecione um Cliente");
             }
             else
             {
@@ -97,7 +97,7 @@ namespace PetMSTuto
                     cmd.Parameters.AddWithValue("@CKey", Key);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer Deleted!!!");
+                    MessageBox.Show("Cliente excluído");
                     Con.Close();
                     DisplayCustomers();
                     Clear();

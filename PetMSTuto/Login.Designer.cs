@@ -141,9 +141,9 @@
             // 
             this.LoginBtn.ActiveBorderThickness = 1;
             this.LoginBtn.ActiveCornerRadius = 20;
-            this.LoginBtn.ActiveFillColor = System.Drawing.Color.Magenta;
-            this.LoginBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.LoginBtn.ActiveLineColor = System.Drawing.Color.Magenta;
+            this.LoginBtn.ActiveFillColor = System.Drawing.Color.LightGray;
+            this.LoginBtn.ActiveForecolor = System.Drawing.Color.Black;
+            this.LoginBtn.ActiveLineColor = System.Drawing.Color.LightGray;
             this.LoginBtn.BackColor = System.Drawing.Color.White;
             this.LoginBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LoginBtn.BackgroundImage")));
             this.LoginBtn.ButtonText = "ENTRAR";

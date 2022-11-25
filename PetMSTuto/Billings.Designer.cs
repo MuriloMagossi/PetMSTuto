@@ -97,6 +97,7 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.EmpNameLbl = new System.Windows.Forms.Label();
+            this.bunifuElipse10 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
@@ -160,7 +161,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.PrintBtn);
             this.panel1.Controls.Add(this.TotalLbl);
             this.panel1.Controls.Add(this.label7);
@@ -180,15 +182,15 @@
             // 
             this.PrintBtn.ActiveBorderThickness = 1;
             this.PrintBtn.ActiveCornerRadius = 20;
-            this.PrintBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.PrintBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
-            this.PrintBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
-            this.PrintBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.PrintBtn.ActiveFillColor = System.Drawing.Color.LightGray;
+            this.PrintBtn.ActiveForecolor = System.Drawing.Color.Black;
+            this.PrintBtn.ActiveLineColor = System.Drawing.Color.LightGray;
+            this.PrintBtn.BackColor = System.Drawing.Color.Transparent;
             this.PrintBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PrintBtn.BackgroundImage")));
             this.PrintBtn.ButtonText = "Imprimir";
             this.PrintBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PrintBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrintBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.PrintBtn.ForeColor = System.Drawing.Color.White;
             this.PrintBtn.IdleBorderThickness = 1;
             this.PrintBtn.IdleCornerRadius = 20;
             this.PrintBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
@@ -226,10 +228,10 @@
             // 
             // BillDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BillDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -245,41 +247,42 @@
             this.Column4,
             this.Column5});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.BillDGV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.BillDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.BillDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.BillDGV.Location = new System.Drawing.Point(498, 34);
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.RowHeadersVisible = false;
             this.BillDGV.RowTemplate.Height = 24;
             this.BillDGV.Size = new System.Drawing.Size(369, 262);
             this.BillDGV.TabIndex = 29;
-            this.BillDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.BillDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
+            this.BillDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.BillDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.BillDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.BillDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.BillDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.BillDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.BillDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.BillDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.BillDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.BillDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             this.BillDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.BillDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BillDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.BillDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.BillDGV.ThemeStyle.HeaderStyle.Height = 25;
             this.BillDGV.ThemeStyle.ReadOnly = false;
-            this.BillDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.BillDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.BillDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BillDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Narrow", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BillDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.BillDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.BillDGV.ThemeStyle.RowsStyle.Height = 24;
-            this.BillDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.BillDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            this.BillDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.BillDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.BillDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BillDGV_CellContentClick);
             // 
             // Column1
@@ -309,10 +312,10 @@
             // 
             // TransactionsDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.TransactionsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -322,41 +325,42 @@
             this.TransactionsDGV.ColumnHeadersHeight = 25;
             this.TransactionsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Narrow", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.TransactionsDGV.DefaultCellStyle = dataGridViewCellStyle6;
-            this.TransactionsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TransactionsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.TransactionsDGV.Location = new System.Drawing.Point(450, 365);
             this.TransactionsDGV.Name = "TransactionsDGV";
             this.TransactionsDGV.RowHeadersVisible = false;
             this.TransactionsDGV.RowTemplate.Height = 24;
             this.TransactionsDGV.Size = new System.Drawing.Size(417, 182);
             this.TransactionsDGV.TabIndex = 28;
-            this.TransactionsDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.TransactionsDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
+            this.TransactionsDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.TransactionsDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.TransactionsDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.TransactionsDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.TransactionsDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.TransactionsDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.TransactionsDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.TransactionsDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.TransactionsDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.TransactionsDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             this.TransactionsDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.TransactionsDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransactionsDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.TransactionsDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.TransactionsDGV.ThemeStyle.HeaderStyle.Height = 25;
             this.TransactionsDGV.ThemeStyle.ReadOnly = false;
-            this.TransactionsDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.TransactionsDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.TransactionsDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.TransactionsDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Narrow", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TransactionsDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.TransactionsDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.TransactionsDGV.ThemeStyle.RowsStyle.Height = 24;
-            this.TransactionsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.TransactionsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            this.TransactionsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.TransactionsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
             // label14
             // 
@@ -450,9 +454,9 @@
             // 
             this.ResetBtn.ActiveBorderThickness = 1;
             this.ResetBtn.ActiveCornerRadius = 20;
-            this.ResetBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.ResetBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
-            this.ResetBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.ResetBtn.ActiveFillColor = System.Drawing.Color.LightGray;
+            this.ResetBtn.ActiveForecolor = System.Drawing.Color.Black;
+            this.ResetBtn.ActiveLineColor = System.Drawing.Color.LightGray;
             this.ResetBtn.BackColor = System.Drawing.Color.White;
             this.ResetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ResetBtn.BackgroundImage")));
             this.ResetBtn.ButtonText = "Resetar";
@@ -476,9 +480,9 @@
             // 
             this.AddBtn.ActiveBorderThickness = 1;
             this.AddBtn.ActiveCornerRadius = 20;
-            this.AddBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.AddBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
-            this.AddBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.AddBtn.ActiveFillColor = System.Drawing.Color.LightGray;
+            this.AddBtn.ActiveForecolor = System.Drawing.Color.Black;
+            this.AddBtn.ActiveLineColor = System.Drawing.Color.LightGray;
             this.AddBtn.BackColor = System.Drawing.Color.White;
             this.AddBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddBtn.BackgroundImage")));
             this.AddBtn.ButtonText = "Adicionar";
@@ -521,10 +525,10 @@
             // 
             // ProductsDGV
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.ProductsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -534,41 +538,42 @@
             this.ProductsDGV.ColumnHeadersHeight = 25;
             this.ProductsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Narrow", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ProductsDGV.DefaultCellStyle = dataGridViewCellStyle9;
-            this.ProductsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ProductsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.ProductsDGV.Location = new System.Drawing.Point(25, 339);
             this.ProductsDGV.Name = "ProductsDGV";
             this.ProductsDGV.RowHeadersVisible = false;
             this.ProductsDGV.RowTemplate.Height = 24;
             this.ProductsDGV.Size = new System.Drawing.Size(419, 208);
             this.ProductsDGV.TabIndex = 12;
-            this.ProductsDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.ProductsDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
+            this.ProductsDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.ProductsDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.ProductsDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.ProductsDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.ProductsDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.ProductsDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.ProductsDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProductsDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.ProductsDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.ProductsDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             this.ProductsDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.ProductsDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductsDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.ProductsDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.ProductsDGV.ThemeStyle.HeaderStyle.Height = 25;
             this.ProductsDGV.ThemeStyle.ReadOnly = false;
-            this.ProductsDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.ProductsDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.ProductsDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ProductsDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Narrow", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductsDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ProductsDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.ProductsDGV.ThemeStyle.RowsStyle.Height = 24;
-            this.ProductsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProductsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            this.ProductsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.ProductsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ProductsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDGV_CellContentClick);
             // 
             // label11
@@ -845,6 +850,11 @@
             this.EmpNameLbl.Text = "Usuário";
             this.EmpNameLbl.Click += new System.EventHandler(this.EmpNameLbl_Click);
             // 
+            // bunifuElipse10
+            // 
+            this.bunifuElipse10.ElipseRadius = 15;
+            this.bunifuElipse10.TargetControl = this.PrintBtn;
+            // 
             // Billings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -954,5 +964,6 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.Label EmpNameLbl;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse10;
     }
 }

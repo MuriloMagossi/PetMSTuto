@@ -150,9 +150,9 @@
             // 
             this.DeleteBtn.ActiveBorderThickness = 1;
             this.DeleteBtn.ActiveCornerRadius = 20;
-            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
-            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.LightGray;
+            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.Black;
+            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.LightGray;
             this.DeleteBtn.BackColor = System.Drawing.Color.White;
             this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
             this.DeleteBtn.ButtonText = "Excluir";
@@ -191,32 +191,27 @@
             // 
             // ProductDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.ProductDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.ProductDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ProductDGV.BackgroundColor = System.Drawing.Color.White;
-            this.ProductDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ProductDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ProductDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(73)))), ((int)(((byte)(102)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ProductDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ProductDGV.ColumnHeadersHeight = 25;
+            this.ProductDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Magneto", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ProductDGV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ProductDGV.EnableHeadersVisualStyles = false;
-            this.ProductDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ProductDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.ProductDGV.Location = new System.Drawing.Point(32, 235);
             this.ProductDGV.Name = "ProductDGV";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -229,31 +224,30 @@
             this.ProductDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.ProductDGV.RowHeadersVisible = false;
             this.ProductDGV.RowTemplate.Height = 24;
-            this.ProductDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductDGV.Size = new System.Drawing.Size(827, 309);
             this.ProductDGV.TabIndex = 12;
-            this.ProductDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.ProductDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.ProductDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
+            this.ProductDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.ProductDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.ProductDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.ProductDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.ProductDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.ProductDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.ProductDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProductDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(73)))), ((int)(((byte)(102)))));
+            this.ProductDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.ProductDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             this.ProductDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.ProductDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.ProductDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.ProductDGV.ThemeStyle.HeaderStyle.Height = 25;
             this.ProductDGV.ThemeStyle.ReadOnly = false;
-            this.ProductDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.ProductDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.ProductDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ProductDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("MV Boli", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ProductDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.ProductDGV.ThemeStyle.RowsStyle.Height = 24;
-            this.ProductDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProductDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.DarkBlue;
+            this.ProductDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.ProductDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ProductDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductDGV_CellContentClick);
             // 
             // label11
@@ -318,9 +312,9 @@
             // 
             this.EditBtn.ActiveBorderThickness = 1;
             this.EditBtn.ActiveCornerRadius = 20;
-            this.EditBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.EditBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
-            this.EditBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.ActiveFillColor = System.Drawing.Color.LightGray;
+            this.EditBtn.ActiveForecolor = System.Drawing.Color.Black;
+            this.EditBtn.ActiveLineColor = System.Drawing.Color.LightGray;
             this.EditBtn.BackColor = System.Drawing.Color.White;
             this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
             this.EditBtn.ButtonText = "Editar";
@@ -344,9 +338,9 @@
             // 
             this.SaveBtn.ActiveBorderThickness = 1;
             this.SaveBtn.ActiveCornerRadius = 20;
-            this.SaveBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.SaveBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
-            this.SaveBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.ActiveFillColor = System.Drawing.Color.LightGray;
+            this.SaveBtn.ActiveForecolor = System.Drawing.Color.Black;
+            this.SaveBtn.ActiveLineColor = System.Drawing.Color.LightGray;
             this.SaveBtn.BackColor = System.Drawing.Color.White;
             this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
             this.SaveBtn.ButtonText = "Salvar";
@@ -521,13 +515,14 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(65, 392);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 20);
+            this.label5.Size = new System.Drawing.Size(64, 22);
             this.label5.TabIndex = 55;
-            this.label5.Text = "Estoque";
+            this.label5.Text = "Fatura";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox5

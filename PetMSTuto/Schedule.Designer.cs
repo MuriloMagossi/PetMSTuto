@@ -1,6 +1,6 @@
 ﻿namespace PetMSTuto
 {
-    partial class Employees
+    partial class Schedule
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Schedule));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -53,6 +49,11 @@
             this.EmpAddTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.EmpNameTb = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.EmployeeDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -60,43 +61,39 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.EmployeeDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.EmpNameLbl = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox8
+            // panel1
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(723, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(104, 55);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.EmployeeDGV);
+            this.panel1.Location = new System.Drawing.Point(201, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(883, 573);
+            this.panel1.TabIndex = 1;
             // 
             // label11
             // 
@@ -104,37 +101,11 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(356, 248);
+            this.label11.Location = new System.Drawing.Point(302, 245);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(227, 25);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Lista de Funcionário";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(14, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 20);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Empregados";
-            // 
-            // bunifuElipse4
-            // 
-            this.bunifuElipse4.ElipseRadius = 35;
-            this.bunifuElipse4.TargetControl = this;
-            // 
-            // bunifuElipse5
-            // 
-            this.bunifuElipse5.ElipseRadius = 35;
-            this.bunifuElipse5.TargetControl = this;
-            // 
-            // bunifuElipse7
-            // 
-            this.bunifuElipse7.ElipseRadius = 20;
-            this.bunifuElipse7.TargetControl = this.panel3;
+            this.label11.Size = new System.Drawing.Size(259, 25);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Lista de Agendamentos";
             // 
             // panel3
             // 
@@ -154,18 +125,18 @@
             this.panel3.Controls.Add(this.EmpNameTb);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Location = new System.Drawing.Point(40, 30);
+            this.panel3.Location = new System.Drawing.Point(29, 15);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(827, 210);
-            this.panel3.TabIndex = 7;
+            this.panel3.TabIndex = 13;
             // 
             // DeleteBtn
             // 
             this.DeleteBtn.ActiveBorderThickness = 1;
             this.DeleteBtn.ActiveCornerRadius = 20;
-            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.LightGray;
-            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.Black;
-            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.LightGray;
+            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
+            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
             this.DeleteBtn.BackColor = System.Drawing.Color.White;
             this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
             this.DeleteBtn.ButtonText = "Excluir";
@@ -183,15 +154,14 @@
             this.DeleteBtn.Size = new System.Drawing.Size(134, 40);
             this.DeleteBtn.TabIndex = 20;
             this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // EditBtn
             // 
             this.EditBtn.ActiveBorderThickness = 1;
             this.EditBtn.ActiveCornerRadius = 20;
-            this.EditBtn.ActiveFillColor = System.Drawing.Color.LightGray;
-            this.EditBtn.ActiveForecolor = System.Drawing.Color.Black;
-            this.EditBtn.ActiveLineColor = System.Drawing.Color.LightGray;
+            this.EditBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
+            this.EditBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
             this.EditBtn.BackColor = System.Drawing.Color.White;
             this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
             this.EditBtn.ButtonText = "Editar";
@@ -209,15 +179,14 @@
             this.EditBtn.Size = new System.Drawing.Size(134, 40);
             this.EditBtn.TabIndex = 19;
             this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // Savebtn
             // 
             this.Savebtn.ActiveBorderThickness = 1;
             this.Savebtn.ActiveCornerRadius = 20;
-            this.Savebtn.ActiveFillColor = System.Drawing.Color.LightGray;
-            this.Savebtn.ActiveForecolor = System.Drawing.Color.Black;
-            this.Savebtn.ActiveLineColor = System.Drawing.Color.LightGray;
+            this.Savebtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.Savebtn.ActiveForecolor = System.Drawing.Color.DarkBlue;
+            this.Savebtn.ActiveLineColor = System.Drawing.Color.DeepPink;
             this.Savebtn.BackColor = System.Drawing.Color.White;
             this.Savebtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Savebtn.BackgroundImage")));
             this.Savebtn.ButtonText = "Salvar";
@@ -235,7 +204,6 @@
             this.Savebtn.Size = new System.Drawing.Size(134, 40);
             this.Savebtn.TabIndex = 18;
             this.Savebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click_1);
             // 
             // label16
             // 
@@ -268,9 +236,9 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(619, 38);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(61, 20);
+            this.label15.Size = new System.Drawing.Size(68, 20);
             this.label15.TabIndex = 15;
-            this.label15.Text = "Senha";
+            this.label15.Text = "Horário";
             // 
             // PasswordTb
             // 
@@ -285,16 +253,16 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(428, 38);
+            this.label13.Location = new System.Drawing.Point(404, 38);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 20);
+            this.label13.Size = new System.Drawing.Size(42, 20);
             this.label13.TabIndex = 13;
-            this.label13.Text = "Telefone";
+            this.label13.Text = "PET";
             // 
             // EmpPhoneTb
             // 
             this.EmpPhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpPhoneTb.Location = new System.Drawing.Point(432, 64);
+            this.EmpPhoneTb.Location = new System.Drawing.Point(408, 64);
             this.EmpPhoneTb.Name = "EmpPhoneTb";
             this.EmpPhoneTb.Size = new System.Drawing.Size(185, 26);
             this.EmpPhoneTb.TabIndex = 12;
@@ -306,9 +274,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(203, 38);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 20);
+            this.label8.Size = new System.Drawing.Size(68, 20);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Endereço";
+            this.label8.Text = "Serviço";
             // 
             // EmpAddTb
             // 
@@ -316,7 +284,7 @@
             this.EmpAddTb.Location = new System.Drawing.Point(207, 64);
             this.EmpAddTb.Multiline = true;
             this.EmpAddTb.Name = "EmpAddTb";
-            this.EmpAddTb.Size = new System.Drawing.Size(185, 91);
+            this.EmpAddTb.Size = new System.Drawing.Size(185, 26);
             this.EmpAddTb.TabIndex = 10;
             // 
             // label10
@@ -326,9 +294,9 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(14, 38);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 20);
+            this.label10.Size = new System.Drawing.Size(65, 20);
             this.label10.TabIndex = 9;
-            this.label10.Text = "Nome";
+            this.label10.Text = "Cliente";
             // 
             // EmpNameTb
             // 
@@ -338,98 +306,26 @@
             this.EmpNameTb.Size = new System.Drawing.Size(165, 26);
             this.EmpNameTb.TabIndex = 8;
             // 
-            // pictureBox7
+            // label9
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(16, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(180, 90);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 31;
-            this.pictureBox7.TabStop = false;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(14, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(121, 20);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Agendamento";
             // 
-            // label6
+            // pictureBox8
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(60, 452);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 20);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Sair";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(11, 442);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 37);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 29;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(60, 389);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 20);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Fatura";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(11, 379);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 37);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 27;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(60, 321);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Clientes";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(11, 311);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 37);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 35;
-            this.bunifuElipse2.TargetControl = this.panel1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.EmployeeDGV);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(198, 14);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 573);
-            this.panel1.TabIndex = 19;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(723, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(104, 55);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
             // 
             // EmployeeDGV
             // 
@@ -454,12 +350,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.EmployeeDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmployeeDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.EmployeeDGV.Location = new System.Drawing.Point(40, 284);
+            this.EmployeeDGV.Location = new System.Drawing.Point(29, 279);
             this.EmployeeDGV.Name = "EmployeeDGV";
             this.EmployeeDGV.RowHeadersVisible = false;
             this.EmployeeDGV.RowTemplate.Height = 24;
             this.EmployeeDGV.Size = new System.Drawing.Size(827, 273);
-            this.EmployeeDGV.TabIndex = 11;
+            this.EmployeeDGV.TabIndex = 12;
             this.EmployeeDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.EmployeeDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.EmployeeDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -482,119 +378,181 @@
             this.EmployeeDGV.ThemeStyle.RowsStyle.Height = 24;
             this.EmployeeDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.EmployeeDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.EmployeeDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
             // 
-            // bunifuElipse1
+            // guna2Elipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 35;
-            this.bunifuElipse1.TargetControl = this;
+            this.guna2Elipse1.BorderRadius = 35;
+            this.guna2Elipse1.TargetControl = this.panel1;
             // 
-            // bunifuElipse3
+            // label7
             // 
-            this.bunifuElipse3.ElipseRadius = 30;
-            this.bunifuElipse3.TargetControl = this.panel2;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(50, 91);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 20);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Usuário";
             // 
-            // panel2
+            // pictureBox7
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(5, 257);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(183, 37);
-            this.panel2.TabIndex = 20;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(5, 7);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(183, 83);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 30;
+            this.pictureBox7.TabStop = false;
             // 
-            // pictureBox3
+            // label6
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(61, 471);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 20);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Sair";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(12, 461);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 37);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 28;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(61, 408);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 20);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Fatura";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(12, 398);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 37);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 26;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(61, 340);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Clientes";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(12, 330);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 37);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 24;
+            this.pictureBox4.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(51, 9);
+            this.label3.Location = new System.Drawing.Point(61, 277);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 20);
-            this.label3.TabIndex = 24;
+            this.label3.TabIndex = 23;
             this.label3.Text = "Empregados";
             // 
-            // label2
+            // pictureBox3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(60, 145);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Início";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 129);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 267);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 37);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(60, 201);
+            this.label1.Location = new System.Drawing.Point(61, 220);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 20);
-            this.label1.TabIndex = 22;
+            this.label1.TabIndex = 21;
             this.label1.Text = "Produtos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(5, 141);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(183, 37);
+            this.panel2.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(56, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Início";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(11, 191);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 210);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
-            // bunifuElipse6
+            // guna2Elipse2
             // 
-            this.bunifuElipse6.ElipseRadius = 35;
-            this.bunifuElipse6.TargetControl = this;
+            this.guna2Elipse2.BorderRadius = 35;
+            this.guna2Elipse2.TargetControl = this;
             // 
-            // EmpNameLbl
-            // 
-            this.EmpNameLbl.AutoSize = true;
-            this.EmpNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpNameLbl.ForeColor = System.Drawing.Color.White;
-            this.EmpNameLbl.Location = new System.Drawing.Point(75, 100);
-            this.EmpNameLbl.Name = "EmpNameLbl";
-            this.EmpNameLbl.Size = new System.Drawing.Size(71, 20);
-            this.EmpNameLbl.TabIndex = 62;
-            this.EmpNameLbl.Text = "Usuário";
-            this.EmpNameLbl.Click += new System.EventHandler(this.EmpNameLbl_Click);
-            // 
-            // Employees
+            // Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1096, 607);
-            this.Controls.Add(this.EmpNameLbl);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox6);
@@ -602,27 +560,29 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Employees";
+            this.Name = "Schedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Employees";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.Text = "Schedule";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -631,13 +591,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse7;
-        private System.Windows.Forms.Panel panel3;
+
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -645,18 +602,20 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2DataGridView EmployeeDGV;
+        private System.Windows.Forms.Panel panel3;
+        private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 Savebtn;
+        private System.Windows.Forms.Label label16;
         private Bunifu.Framework.UI.BunifuDatepicker EmpDOB;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox PasswordTb;
@@ -666,11 +625,8 @@
         private System.Windows.Forms.TextBox EmpAddTb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox EmpNameTb;
-        private System.Windows.Forms.Label label16;
-        private Bunifu.Framework.UI.BunifuThinButton2 Savebtn;
-        private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
-        private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
-        private Guna.UI2.WinForms.Guna2DataGridView EmployeeDGV;
-        private System.Windows.Forms.Label EmpNameLbl;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label11;
     }
 }

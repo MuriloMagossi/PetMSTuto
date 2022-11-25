@@ -92,6 +92,12 @@
     <Compile Include="Products.Designer.cs">
       <DependentUpon>Products.cs</DependentUpon>
     </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
