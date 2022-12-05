@@ -74,6 +74,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.EmpNameLbl = new System.Windows.Forms.Label();
+            this.EmpId = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -139,6 +140,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.EmpId);
             this.panel3.Controls.Add(this.DeleteBtn);
             this.panel3.Controls.Add(this.EditBtn);
             this.panel3.Controls.Add(this.Savebtn);
@@ -586,6 +588,15 @@
             this.EmpNameLbl.Text = "Usuário";
             this.EmpNameLbl.Click += new System.EventHandler(this.EmpNameLbl_Click);
             // 
+            // EmpId
+            // 
+            this.EmpId.FormattingEnabled = true;
+            this.EmpId.Location = new System.Drawing.Point(29, 120);
+            this.EmpId.Name = "EmpId";
+            this.EmpId.Size = new System.Drawing.Size(121, 21);
+            this.EmpId.TabIndex = 21;
+            this.EmpId.SelectedIndexChanged += new System.EventHandler(this.EmpId_SelectedIndexChanged);
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -672,5 +683,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
         private Guna.UI2.WinForms.Guna2DataGridView EmployeeDGV;
         private System.Windows.Forms.Label EmpNameLbl;
+        private System.Windows.Forms.ComboBox EmpId;
     }
 }

@@ -39,14 +39,11 @@
             this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Savebtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label16 = new System.Windows.Forms.Label();
-            this.EmpDOB = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label15 = new System.Windows.Forms.Label();
             this.PasswordTb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.EmpPhoneTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.EmpAddTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.EmpNameTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -69,6 +66,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -87,6 +86,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.EmployeeDGV);
@@ -110,17 +110,15 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.DeleteBtn);
             this.panel3.Controls.Add(this.EditBtn);
             this.panel3.Controls.Add(this.Savebtn);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.EmpDOB);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.PasswordTb);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.EmpPhoneTb);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.EmpAddTb);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.EmpNameTb);
             this.panel3.Controls.Add(this.label9);
@@ -205,30 +203,6 @@
             this.Savebtn.TabIndex = 18;
             this.Savebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(428, 120);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(165, 20);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Data de aniversário";
-            // 
-            // EmpDOB
-            // 
-            this.EmpDOB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.EmpDOB.BorderRadius = 25;
-            this.EmpDOB.ForeColor = System.Drawing.Color.White;
-            this.EmpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.EmpDOB.FormatCustom = null;
-            this.EmpDOB.Location = new System.Drawing.Point(599, 102);
-            this.EmpDOB.Name = "EmpDOB";
-            this.EmpDOB.Size = new System.Drawing.Size(204, 38);
-            this.EmpDOB.TabIndex = 16;
-            this.EmpDOB.Value = new System.DateTime(2021, 8, 3, 16, 27, 42, 513);
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -277,15 +251,6 @@
             this.label8.Size = new System.Drawing.Size(68, 20);
             this.label8.TabIndex = 11;
             this.label8.Text = "Serviço";
-            // 
-            // EmpAddTb
-            // 
-            this.EmpAddTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpAddTb.Location = new System.Drawing.Point(207, 64);
-            this.EmpAddTb.Multiline = true;
-            this.EmpAddTb.Name = "EmpAddTb";
-            this.EmpAddTb.Size = new System.Drawing.Size(185, 26);
-            this.EmpAddTb.TabIndex = 10;
             // 
             // label10
             // 
@@ -546,6 +511,21 @@
             this.guna2Elipse2.BorderRadius = 35;
             this.guna2Elipse2.TargetControl = this;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(207, 64);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(146, 21);
+            this.comboBox1.TabIndex = 21;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(47, 245);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 15;
+            // 
             // Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -615,18 +595,17 @@
         private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 Savebtn;
-        private System.Windows.Forms.Label label16;
-        private Bunifu.Framework.UI.BunifuDatepicker EmpDOB;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox PasswordTb;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox EmpPhoneTb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox EmpAddTb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox EmpNameTb;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
