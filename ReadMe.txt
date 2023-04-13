@@ -1,21 +1,13 @@
-Step 1: Double Click on PetMsTuto.sln
-Step2 : In the shared folder, copy the database file called "PetShopDb.mdf" and paste it in your documents
-Step 3: Once The Solution is open in visual studio, click on server explorer
-Step 4: Then Click on "Connect to Database"
-Step 5: Browse to the location of the database file(which you copied into "your documents")
-Step6: Once the database is successfully added, Right-click on it and click on property
-Step7 : Copy the connection string and replace it in all the sqlconnection objects.
+# Instruções de Uso
 
-Step8 : Run the project and enjoy this wonderfull application
+Siga estas etapas para usar o aplicativo:
 
-Note:
-1. In case you fill difficult to follow all these steps,you can simply open the solution, 
-and then create your own database by following instructions in my youtube video tutorial, 
-once you create the database, you can the run the project successfully
+1. Dê um duplo clique em PetMsTuto.sln.
+2. Na pasta compartilhada, copie o arquivo de banco de dados chamado "PetShopDb.mdf" e cole-o em seus documentos.
+3. Quando a solução estiver aberta no Visual Studio, clique em "Server Explorer".
+4. Clique em "Conectar ao Banco de Dados".
+5. Navegue até o local do arquivo de banco de dados (que você copiou para "seus documentos").
+6. Depois que o banco de dados for adicionado com sucesso, clique com o botão direito nele e clique em "Propriedades".
+7. Copie a string de conexão e substitua-a em todos os objetos SqlConnection.
 
-2. Making project like this takes a lot of time, your support to this channel will be highly appreciated.
-
-Share our content, Subscribe, drop a nice content, donate. it will help us to keep on publishing more and more content
-
-
-Code Space
+8. Execute o projeto e aproveite este maravilhoso aplicativo.
